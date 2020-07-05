@@ -6,8 +6,8 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: './index.js',
-        colorNtype: './Uikit/ColorNtype/index.js'
+        main: './WebsitePages/Main/index.js',
+        //colorNtype: './Uikit/ColorNtype/index.js'
     },
     output: {
         filename: '[name].[contenthash].js',
