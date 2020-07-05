@@ -7,8 +7,45 @@
   position: absolute;
   width: 48px;
   height: 48px;
-  left: 30px;
-  top: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.H1 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.H2 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.H3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  /* identical to box height */
+  text-transform: uppercase;
+}
+
+.Body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.text-type__name {
+  color: rgba(31, 32, 65, 0.25);
 }
 
 .page {
@@ -23,6 +60,16 @@
   <body>
     <div class="page">
       <div class="logo"><img class="logo__img" src="../logo/logo.svg" alt=""/></div>
+      <div class="text-types">
+        <div class="text-type__name">H1</div>
+        <div class="text-type__inline H1">This one is the sub-section or widget title</div>
+        <div class="text-type__name">H2</div>
+        <div class="text-type__inline H2">Next one is the item title inside widgets</div>
+        <div class="text-type__name">H3</div>
+        <div class="text-type__inline H3">This is a label or CTA text</div>
+        <div class="text-type__name">Body</div>
+        <div class="text-type__inline Body">This is the body text, which is used for most of the design, like paragraphs, lists, etc.</div>
+      </div>
     </div>
   </body>
 </html>

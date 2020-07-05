@@ -1,0 +1,9 @@
+block variables
+- var textTypes = { H1 : 'This one is the sub-section or widget title', H2 : 'Next one is the item title inside widgets', H3 : 'This is a label or CTA text', Body : 'This is the body text, which is used for most of the design, like paragraphs, lists, etc.'}
+
+
+block content
+.text-types
+    each val, key in textTypes
+        .text-type__name= key
+        .text-type__inline(class=key)= val
