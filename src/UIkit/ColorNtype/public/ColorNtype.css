@@ -1,0 +1,14 @@
+.logo {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 30px;
+  top: 30px;
+}
+
+.page {
+  max-width: 1920;
+  min-width: 320;
+}
+
+/*# sourceMappingURL=ColorNtype.css.map */
