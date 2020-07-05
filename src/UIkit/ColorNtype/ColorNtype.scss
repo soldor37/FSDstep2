@@ -1,6 +1,9 @@
 @import "./logo/logo.scss";
 @import "./text-types/text-types.scss";
 
+body{
+    margin: 0px;
+}
 .page{
     max-width: 1920;
     min-width: 320;

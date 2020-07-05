@@ -43,6 +43,10 @@
   color: rgba(31, 32, 65, 0.25);
 }
 
+body {
+  margin: 0px;
+}
+
 .page {
   max-width: 1920;
   min-width: 320;
