@@ -86,6 +86,21 @@
   color: #6fcf97;
 }
 
+.color-types {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 29px;
+}
+.color-types .color-types__bg {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+.color-types .color-types__hash {
+  font-weight: normal;
+}
+
 body {
   margin: 0px;
   max-width: 1440;
@@ -117,6 +132,13 @@ body {
 }
 .page .text-types .text-types__item .text-types__inline {
   width: 90%;
+}
+.page .color-types__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.page .color-types__item .color-types__bg {
+  margin-right: 40px;
 }
 
 /*# sourceMappingURL=ColorNtype.css.map */

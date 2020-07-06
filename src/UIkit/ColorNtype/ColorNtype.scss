@@ -33,5 +33,12 @@ body{
             }
         }
     }
+    .color-types__item{
+        display: flex;
+        margin-bottom: 20px;
+        .color-types__bg{
+            margin-right: 40px;
+        }
+    }
     
 }

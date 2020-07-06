@@ -1,15 +1,15 @@
-mixin colors(color, text, hash)
+mixin colors(color, text, hash, opas)
     .color-types__item 
-        .color-types__bg(class=color)
-        .color-types__name(class=color)= text
+        .color-types__bg(style={background: hash, opacity: opas})
+        .color-types__name(class="color-dark100")= text
         .color-types__hash= hash
 
 block content
 .color-types
     +colors('color-dark100','Dark Shade 100%','#1F2041')
-    +colors('color-dark75','Dark Shade 75%','#1F2041')
-    +colors('color-dark50','Dark Shade 50%','#1F2041')
-    +colors('color-dark25','Dark Shade 25%','#1F2041')
-    +colors('color-dark5','Dark Shade 5%','#1F2041')
+    +colors('color-dark75','Dark Shade 75%','#1F2041', '0.75')
+    +colors('color-dark50','Dark Shade 50%','#1F2041', '0.5')
+    +colors('color-dark25','Dark Shade 25%','#1F2041', '0.25')
+    +colors('color-dark5','Dark Shade 5%','#1F2041', '0.05')
     +colors('color-purple','Purple','#BC9CFF')
     +colors('color-green','Green','#6FCF97')

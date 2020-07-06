@@ -10,8 +10,23 @@ $text-colors: (
 
 .color {
     @each $name, $hash in $text-colors {
-      &-#{$name} {
-        color: $hash;
-      }
+        &-#{$name} {
+            color: $hash;
+        }
     }
-  }
+}
+
+.color-types {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    .color-types__bg{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+    }
+    .color-types__hash {
+        font-weight: normal;
+    }
+}
