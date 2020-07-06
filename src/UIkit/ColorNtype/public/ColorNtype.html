@@ -4,14 +4,31 @@
     <meta charset="utf-8"/>
     <title>ColorsAndType</title>
     <style>.logo {
-  position: absolute;
   width: 48px;
   height: 48px;
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.H1 {
+@font-face {
+  font-family: "Quicksand";
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Bold.ttf);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Bold.eot);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Bold.otf);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Bold.woff);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Regular.ttf);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Regular.eot);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Regular.otf);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Regular.woff);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.ttf);
+  src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.eot);
+  src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.otf);
+  src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.woff);
+}
+.text-H1 {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -19,7 +36,7 @@
   line-height: 30px;
 }
 
-.H2 {
+.text-H2 {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -27,16 +44,17 @@
   line-height: 24px;
 }
 
-.H3 {
+.text-H3 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
+  line-height: 15px;
   /* identical to box height */
   text-transform: uppercase;
 }
 
-.Body {
+.text-Body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -44,17 +62,44 @@
   line-height: 24px;
 }
 
-.text-type__name {
+.text-types__name {
   color: rgba(31, 32, 65, 0.25);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 body {
   margin: 0px;
+  max-width: 1440;
+  min-width: 320;
 }
 
 .page {
-  max-width: 1920;
-  min-width: 320;
+  display: flex;
+  justify-content: start;
+  flex-flow: row wrap;
+}
+.page .logo {
+  width: 100%;
+}
+.page .text-types {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page .text-types .text-types__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.page .text-types .text-types__item .text-types__name {
+  width: 10%;
+  margin-right: 30px;
+}
+.page .text-types .text-types__item .text-types__inline {
+  width: 90%;
 }
 
 /*# sourceMappingURL=ColorNtype.css.map */
@@ -65,14 +110,22 @@ body {
     <div class="page">
       <div class="logo"><img class="logo__img" src="../logo/logo.svg" alt=""/></div>
       <div class="text-types">
-        <div class="text-type__name">H1</div>
-        <div class="text-type__inline H1">This one is the sub-section or widget title</div>
-        <div class="text-type__name">H2</div>
-        <div class="text-type__inline H2">Next one is the item title inside widgets</div>
-        <div class="text-type__name">H3</div>
-        <div class="text-type__inline H3">This is a label or CTA text</div>
-        <div class="text-type__name">Body</div>
-        <div class="text-type__inline Body">This is the body text, which is used for most of the design, like paragraphs, lists, etc.</div>
+        <div class="text-types__item">
+          <div class="text-types__name text-H1">H1</div>
+          <div class="text-types__inline text-H1">This one is the sub-section or widget title</div>
+        </div>
+        <div class="text-types__item">
+          <div class="text-types__name text-H2">H2</div>
+          <div class="text-types__inline text-H2">Next one is the item title inside widgets</div>
+        </div>
+        <div class="text-types__item">
+          <div class="text-types__name text-H3">H3</div>
+          <div class="text-types__inline text-H3">This is a label or CTA text</div>
+        </div>
+        <div class="text-types__item">
+          <div class="text-types__name text-Body">Body</div>
+          <div class="text-types__inline text-Body">This is the body text, which is used for most of the design, like paragraphs, lists, etc.</div>
+        </div>
       </div>
     </div>
   </body>

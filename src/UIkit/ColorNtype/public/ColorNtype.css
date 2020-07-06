@@ -1,12 +1,29 @@
 .logo {
-  position: absolute;
   width: 48px;
   height: 48px;
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.H1 {
+@font-face {
+  font-family: "Quicksand";
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Bold.ttf);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Bold.eot);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Bold.otf);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Bold.woff);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Regular.ttf);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Regular.eot);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Regular.otf);
+  src: url(./../../../assets/fonts/Quicksand/Quicksand-Regular.woff);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.ttf);
+  src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.eot);
+  src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.otf);
+  src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.woff);
+}
+.text-H1 {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -14,7 +31,7 @@
   line-height: 30px;
 }
 
-.H2 {
+.text-H2 {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -22,16 +39,17 @@
   line-height: 24px;
 }
 
-.H3 {
+.text-H3 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
+  line-height: 15px;
   /* identical to box height */
   text-transform: uppercase;
 }
 
-.Body {
+.text-Body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -39,17 +57,44 @@
   line-height: 24px;
 }
 
-.text-type__name {
+.text-types__name {
   color: rgba(31, 32, 65, 0.25);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 body {
   margin: 0px;
+  max-width: 1440;
+  min-width: 320;
 }
 
 .page {
-  max-width: 1920;
-  min-width: 320;
+  display: flex;
+  justify-content: start;
+  flex-flow: row wrap;
+}
+.page .logo {
+  width: 100%;
+}
+.page .text-types {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page .text-types .text-types__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.page .text-types .text-types__item .text-types__name {
+  width: 10%;
+  margin-right: 30px;
+}
+.page .text-types .text-types__item .text-types__inline {
+  width: 90%;
 }
 
 /*# sourceMappingURL=ColorNtype.css.map */

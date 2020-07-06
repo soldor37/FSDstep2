@@ -1,10 +1,37 @@
 @import "./logo/logo.scss";
 @import "./text-types/text-types.scss";
 
+
 body{
     margin: 0px;
-}
-.page{
-    max-width: 1920;
+    max-width: 1440;
     min-width: 320;
+}
+
+.page{
+    display: flex;
+    justify-content: start;
+    flex-flow: row wrap;
+    .logo{
+        width: 100%;
+    }
+    .text-types{
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .text-types__item{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+            .text-types__name{
+                width: 10%;
+                margin-right: 30px;
+            }
+            .text-types__inline{
+                width: 90%;
+            }
+        }
+    }
+    
 }

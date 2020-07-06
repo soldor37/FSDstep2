@@ -5,5 +5,6 @@ block variables
 block content
 .text-types
     each val, key in textTypes
-        .text-type__name= key
-        .text-type__inline(class=key)= val
+        .text-types__item
+            .text-types__name(class="text-"+key)= key
+            .text-types__inline(class="text-"+key)= val
