@@ -12,9 +12,6 @@ body {
     display: flex;
     justify-content: start;
     flex-flow: row wrap;
-    .logo {
-        width: 100%;
-    }
     .text-types {
         max-width: 400px;
         display: flex;
@@ -46,8 +43,6 @@ body {
             }
             .color-types__title {
                 flex-flow: column;
-                .color-types__name {
-                }
             }
         }
     }
