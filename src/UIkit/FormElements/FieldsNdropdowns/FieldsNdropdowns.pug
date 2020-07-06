@@ -1,0 +1,7 @@
+mixin textField(title, subtitle, placeholder)
+    form.text-field
+        p.text-field__title
+            |#{title}
+        p.text-field__subtitle
+            |#{subtitle}
+        input.text-field__input(type="text" placeholder=placeholder)
