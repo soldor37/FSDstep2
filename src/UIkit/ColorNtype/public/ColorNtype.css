@@ -23,6 +23,10 @@
   src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.otf);
   src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.woff);
 }
+.text-H1, .text-H2, .text-H3 {
+  color: #1f2041;
+}
+
 .text-H1 {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
@@ -55,6 +59,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .text-types__name {
@@ -62,6 +67,7 @@
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
+  text-align: right;
 }
 
 .color-dark100 {
@@ -87,7 +93,7 @@
 }
 
 .color-types {
-  font-family: "Montserrat";
+  font-family: "Quicksand";
   font-weight: bold;
   font-size: 19px;
   line-height: 29px;
@@ -119,7 +125,8 @@ body {
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 67px;
+  margin-left: 435px;
 }
 .page .text-types .text-types__item {
   display: flex;
@@ -133,12 +140,20 @@ body {
 .page .text-types .text-types__item .text-types__inline {
   width: 90%;
 }
-.page .color-types__item {
+.page .color-types {
+  margin-top: 67px;
+  margin-left: 150px;
+}
+.page .color-types .color-types__item {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
-.page .color-types__item .color-types__bg {
+.page .color-types .color-types__item .color-types__bg {
   margin-right: 40px;
+}
+.page .color-types .color-types__item .color-types__title {
+  flex-flow: column;
 }
 
 /*# sourceMappingURL=ColorNtype.css.map */

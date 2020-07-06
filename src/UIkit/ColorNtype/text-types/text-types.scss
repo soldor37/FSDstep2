@@ -16,6 +16,9 @@
     src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.otf);
     src: url(./../../../assets/fonts/Montserrat/Montserrat-Regular.woff);
 }
+.text-H1, .text-H2, .text-H3 {
+    color: #1f2041;
+}
 
 .text-H1 {
     font-family: "Quicksand", sans-serif;
@@ -46,6 +49,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
 }
 
 .text-types__name {
@@ -53,4 +57,5 @@
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
+    text-align: right;
 }

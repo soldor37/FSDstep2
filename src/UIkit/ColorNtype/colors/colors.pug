@@ -1,8 +1,9 @@
 mixin colors(color, text, hash, opas)
     .color-types__item 
         .color-types__bg(style={background: hash, opacity: opas})
-        .color-types__name(class="color-dark100")= text
-        .color-types__hash= hash
+        .color_types__title
+            .color-types__name(class="color-dark100")= text
+            .color-types__hash= hash
 
 block content
 .color-types

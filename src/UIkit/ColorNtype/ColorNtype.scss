@@ -2,43 +2,53 @@
 @import "./text-types/text-types.scss";
 @import "./colors/colors.scss";
 
-body{
+body {
     margin: 0px;
     max-width: 1440;
     min-width: 320;
 }
 
-.page{
+.page {
     display: flex;
     justify-content: start;
     flex-flow: row wrap;
-    .logo{
+    .logo {
         width: 100%;
     }
-    .text-types{
+    .text-types {
         max-width: 400px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        .text-types__item{
+        margin-top: 67px;
+        margin-left: 435px;
+        .text-types__item {
             display: flex;
             flex-direction: row;
             margin-bottom: 50px;
-            .text-types__name{
+            .text-types__name {
                 width: 10%;
                 margin-right: 30px;
             }
-            .text-types__inline{
+            .text-types__inline {
                 width: 90%;
             }
         }
     }
-    .color-types__item{
-        display: flex;
-        margin-bottom: 20px;
-        .color-types__bg{
-            margin-right: 40px;
+    .color-types {
+        margin-top: 67px;
+        margin-left: 150px;
+        .color-types__item {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+            .color-types__bg {
+                margin-right: 40px;
+            }
+            .color-types__title {
+                flex-flow: column;
+                .color-types__name {
+                }
+            }
         }
     }
-    
 }
