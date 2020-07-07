@@ -32,7 +32,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 30px;
 }
 
 .text-H2 {
@@ -40,7 +39,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
-  line-height: 24px;
 }
 
 .text-H3 {
@@ -48,7 +46,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px;
   /* identical to box height */
   text-transform: uppercase;
 }
@@ -58,7 +55,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
 
@@ -151,6 +147,50 @@ body {
 }
 .page .color-types .color-types__item .color-types__title {
   flex-flow: column;
+}
+
+.text-field {
+  display: flex;
+  flex-flow: wrap;
+  width: 320px;
+  height: 67px;
+}
+.text-field .text-field__title {
+  margin: 0;
+  width: 50%;
+  height: 15px;
+  margin-top: 3px;
+}
+.text-field .text-field__subtitle {
+  text-align: right;
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.5);
+  margin: 0;
+  margin-bottom: 8px;
+  width: 50%;
+  height: 15px;
+}
+.text-field .text-field__input {
+  width: 320px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.text-field input {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  outline: none;
+}
+.text-field input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.text-field input[type=text] {
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 15px;
 }
 
 /*# sourceMappingURL=FormElements.css.map */
