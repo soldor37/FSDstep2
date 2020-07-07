@@ -219,6 +219,16 @@ body {
   width: 50%;
   height: 15px;
 }
+.dropdown .dropdown__arrow {
+  border: solid rgba(31, 32, 65, 0.5);
+  border-width: 0px 2px 2px 0px;
+  display: inline-block;
+  padding: 3.5px;
+  transform: rotate(45deg);
+  position: relative;
+  left: 290px;
+  top: 24px;
+}
 .dropdown .dropdown__input {
   width: 320px;
   height: 44px;
@@ -229,6 +239,9 @@ body {
 }
 .dropdown .dropdown__input:focus {
   border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.dropdown .dropdown__input:focus.dropdown__arrow {
+  border: solid rgba(31, 32, 65, 0.75);
 }
 .dropdown .dropdown__input:hover {
   border: 1px solid rgba(31, 32, 65, 0.5);
@@ -241,6 +254,10 @@ body {
   outline: none;
   color: rgba(31, 32, 65, 0.75);
   padding-left: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
 }
 .dropdown select:focus option {
   color: #1f2041;
