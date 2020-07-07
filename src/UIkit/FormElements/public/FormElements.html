@@ -183,6 +183,12 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
 }
+.text-field .text-field__input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.text-field .text-field__input:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
 .text-field input {
   font-family: Montserrat;
   font-style: normal;
@@ -210,6 +216,11 @@ body {
           <p class="text-field__title text-H3">Text field</p>
           <p class="text-field__subtitle text-H3">Default</p>
           <input class="text-field__input" type="text" placeholder="Email"/>
+        </form>
+        <form class="text-field">
+          <p class="text-field__title text-H3">Text field</p>
+          <p class="text-field__subtitle text-H3">Hover / Focus</p>
+          <input class="text-field__input" type="text" placeholder="Email" value="This is pretty awesome"/>
         </form>
       </div>
     </div>

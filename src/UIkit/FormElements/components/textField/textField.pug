@@ -4,4 +4,4 @@ mixin textField(title, subtitle, placeholder)
             |#{title}
         p.text-field__subtitle.text-H3
             |#{subtitle}
-        input.text-field__input(type="text" placeholder=placeholder)
+        input.text-field__input(type="text" placeholder=placeholder value!=attributes.value)
