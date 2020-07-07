@@ -1,14 +1,16 @@
 include ./components/textField/textField.pug
+include ./components/dropdown/dropdown.pug
 
 html(lang="ru")
   head
     meta(charset="utf-8")
     title= "Form elements"
     style
-        include ./public/FormElements.css
-  body
-      .page
-        include ../ColorNtype/logo/logo.pug
-        .textFieldsNdrops
-            +textField("Text field", "Default","Email")
-            +textField("Text field", "Hover / Focus","Email")(value="This is pretty awesome")
+      include ./public/FormElements.css
+  body 
+    .page
+      include ../ColorNtype/logo/logo.pug
+      .textFieldsNdrops
+        //+textField("Text field", "Default","Email")
+        //+textField("Text field", "Hover / Focus","Email")(value="This is pretty awesome")
+        +dropdown("Dropdown", "Default","Сколько гостей")

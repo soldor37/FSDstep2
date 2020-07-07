@@ -204,23 +204,82 @@ body {
   padding-left: 15px;
 }
 
+.dropdown {
+  display: flex;
+  flex-flow: wrap;
+  width: 320px;
+  height: 67px;
+}
+.dropdown .dropdown__title {
+  margin: 0;
+  width: 50%;
+  height: 15px;
+}
+.dropdown .dropdown__subtitle {
+  text-align: right;
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.5);
+  margin: 0;
+  margin-bottom: 5.5px;
+  width: 50%;
+  height: 15px;
+}
+.dropdown .dropdown__input {
+  width: 320px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.dropdown .dropdown__input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.dropdown .dropdown__input:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.dropdown select {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  outline: none;
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 15px;
+}
+.dropdown select:focus option {
+  color: #1f2041;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.dropdown select::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.dropdown select[type=text] {
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 15px;
+}
+
 /*# sourceMappingURL=FormElements.css.map */
 
     </style>
   </head>
-  <body>
+  <body> 
     <div class="page">
       <div class="logo"><img class="logo__img" src="../../../assets/logo/logo.svg" alt=""/></div>
       <div class="textFieldsNdrops">
-        <form class="text-field">
-          <p class="text-field__title text-H3">Text field</p>
-          <p class="text-field__subtitle text-H3">Default</p>
-          <input class="text-field__input" type="text" placeholder="Email"/>
-        </form>
-        <form class="text-field">
-          <p class="text-field__title text-H3">Text field</p>
-          <p class="text-field__subtitle text-H3">Hover / Focus</p>
-          <input class="text-field__input" type="text" placeholder="Email" value="This is pretty awesome"/>
+        <!--+textField("Text field", "Default","Email")-->
+        <!--+textField("Text field", "Hover / Focus","Email")(value="This is pretty awesome")-->
+        <form class="dropdown">
+          <p class="dropdown__title text-H3">Dropdown</p>
+          <p class="dropdown__subtitle text-H3">Default</p>
+          <select class="dropdown__input">
+            <option hidden="hidden" selected="selected" disabled="disabled" value="">Сколько гостей</option>
+            <option>Jopa</option>
+          </select>
         </form>
       </div>
     </div>

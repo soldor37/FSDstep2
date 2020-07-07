@@ -199,4 +199,63 @@ body {
   padding-left: 15px;
 }
 
+.dropdown {
+  display: flex;
+  flex-flow: wrap;
+  width: 320px;
+  height: 67px;
+}
+.dropdown .dropdown__title {
+  margin: 0;
+  width: 50%;
+  height: 15px;
+}
+.dropdown .dropdown__subtitle {
+  text-align: right;
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.5);
+  margin: 0;
+  margin-bottom: 5.5px;
+  width: 50%;
+  height: 15px;
+}
+.dropdown .dropdown__input {
+  width: 320px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.dropdown .dropdown__input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.dropdown .dropdown__input:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.dropdown select {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  outline: none;
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 15px;
+}
+.dropdown select:focus option {
+  color: #1f2041;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.dropdown select::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.dropdown select[type=text] {
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 15px;
+}
+
 /*# sourceMappingURL=FormElements.css.map */

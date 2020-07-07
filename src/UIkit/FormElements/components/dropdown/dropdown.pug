@@ -1,0 +1,9 @@
+mixin dropdown(title, subtitle, name)
+    form.dropdown
+        p.dropdown__title.text-H3
+            |#{title}
+        p.dropdown__subtitle.text-H3
+            |#{subtitle}
+        select.dropdown__input
+            option(hidden selected disabled value="")=name
+            option="Jopa"
