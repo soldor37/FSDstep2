@@ -81,19 +81,32 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./Uikit/ColorNtype/ColorNtype.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./index.js":
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./Uikit/ColorNtype/ColorNtype.js":
+/*!****************************************!*\
+  !*** ./Uikit/ColorNtype/ColorNtype.js ***!
+  \****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("//commit 1\r\n//commit 2\r\n//commit 3\n\n//# sourceURL=webpack:///./index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_logo_logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/logo/logo.svg */ \"./assets/logo/logo.svg\");\n\n\n//# sourceURL=webpack:///./Uikit/ColorNtype/ColorNtype.js?");
+
+/***/ }),
+
+/***/ "./assets/logo/logo.svg":
+/*!******************************!*\
+  !*** ./assets/logo/logo.svg ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/logo.svg\");\n\n//# sourceURL=webpack:///./assets/logo/logo.svg?");
 
 /***/ })
 
