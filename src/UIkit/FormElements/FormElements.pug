@@ -1,5 +1,6 @@
 include ./components/textField/textField.pug
 include ./components/dropdown/dropdown.pug
+include ./components/maskedTextField/maskedTextField.pug
 
 html(lang="ru")
   head
@@ -11,4 +12,5 @@ html(lang="ru")
       .textFieldsNdrops
         //+textField("Text field", "Default","Email")
         //+textField("Text field", "Hover / Focus","Email")(value="This is pretty awesome")
-        +dropdown("Dropdown", "Default","Сколько гостей")
+        //+dropdown("Dropdown", "Default","Сколько гостей")
+        +maskedTextField("Masked text field", "Default","Email")
