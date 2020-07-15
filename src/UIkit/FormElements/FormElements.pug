@@ -1,6 +1,7 @@
 include ./components/textField/textField.pug
 include ./components/dropdown/dropdown.pug
 include ./components/maskedTextField/maskedTextField.pug
+include ./components/dateDropdown/dateDropdown.pug
 
 html(lang="ru")
   head
@@ -13,4 +14,7 @@ html(lang="ru")
         //+textField("Text field", "Default","Email")
         //+textField("Text field", "Hover / Focus","Email")(value="This is pretty awesome")
         //+dropdown("Dropdown", "Default","Сколько гостей")
-        +maskedTextField("Masked text field", "Default")
+        //+maskedTextField("Masked text field", "Default")
+        .dropDownGroup
+          +dateDropdown("Date dropdown")
+          +dateDropdown("Date dropdown")(value="2019-08-19")

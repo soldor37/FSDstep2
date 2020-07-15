@@ -1,0 +1,64 @@
+.dateDropdown {
+    display: flex;
+    flex-flow: wrap;
+    width: 150px;
+    height: 67px;
+    margin-right: 20px;
+    &__title {
+        margin: 0;
+        width: 50%;
+        height: 15px;
+        margin-top: 3px;
+    }
+    &__subtitle {
+        text-align: right;
+        font-weight: normal;
+        color: rgba(31, 32, 65, 0.5);
+        margin: 0;
+        margin-bottom: 8px;
+        width: 50%;
+        height: 15px;
+    }
+    &__input {
+        width: 150px;
+        height: 44px;
+        background: #ffffff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        &:focus {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+        }
+        &:hover {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+        }
+    }
+    //значек открытия календаря
+    ::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+    //плейсхолдер инпута даты
+    ::-webkit-datetime-edit-fields-wrapper {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+        text-transform: uppercase;
+        margin-left: 13px;
+    }
+    input {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        outline: none;
+    }
+    input::placeholder {
+        color: rgba(31, 32, 65, 0.25);
+    }
+    input[type="text"] {
+        color: rgba(31, 32, 65, 0.75);
+        padding-left: 15px;
+    }
+}

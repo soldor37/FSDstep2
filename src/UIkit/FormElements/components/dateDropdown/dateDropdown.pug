@@ -1,0 +1,12 @@
+mixin dateDropdown(title, subtitle)
+    form.dateDropdown
+        if !subtitle
+            p.dateDropdown__title.text-H3(style="width:100%")
+                |#{title}
+        else
+            p.dateDropdown__title.text-H3
+                |#{title}
+        if subtitle    
+            p.dateDropdown__subtitle.text-H3
+                |#{subtitle}
+        input.dateDropdown__input(type="date" min="1980-01-01" max="2040-01-01" value!=attributes.value)
