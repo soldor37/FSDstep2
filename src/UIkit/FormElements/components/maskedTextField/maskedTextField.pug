@@ -1,7 +1,7 @@
-mixin maskedTextField(title, subtitle, placeholder)
+mixin maskedTextField(title, subtitle)
     form.text-field_masked
         p.text-field__title.text-H3
             |#{title}
         p.text-field__subtitle.text-H3
             |#{subtitle}
-        input.text-field__input(type="text" placeholder=placeholder value!=attributes.value)
+        input.text-field__input(type="date" min="1980-01-01")
