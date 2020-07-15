@@ -4,6 +4,7 @@
   "description": "fullstack development step 2",
   "private": true,
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "jquery": "^3.5.1"
   },
   "devDependencies": {

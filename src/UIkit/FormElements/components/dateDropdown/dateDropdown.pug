@@ -9,4 +9,5 @@ mixin dateDropdown(title, subtitle)
         if subtitle    
             p.dateDropdown__subtitle.text-H3
                 |#{subtitle}
-        input.dateDropdown__input(type="date" min="1980-01-01" max="2040-01-01" value!=attributes.value)
+        input.dateDropdown__input(type="text" class="datepicker-here" data-position="right top")
+        //- input.dateDropdown__input(type="date" min="1980-01-01" max="2040-01-01" value!=attributes.value)

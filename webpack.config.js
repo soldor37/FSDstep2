@@ -46,7 +46,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.s?[ac]ss$/i,
                 use: [
                     process.env.NODE_ENV !== 'production'
                         ? 'style-loader'
