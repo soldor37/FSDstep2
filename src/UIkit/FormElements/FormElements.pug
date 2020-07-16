@@ -3,6 +3,7 @@ include ./components/dropdown/dropdown.pug
 include ./components/maskedTextField/maskedTextField.pug
 include ./components/dateDropdown/dateDropdown.pug
 include ./components/filterDateDropdown/filterDateDropdown.pug
+include ./components/subTextField/subTextField.pug
 
 html(lang="ru")
   head
@@ -20,4 +21,4 @@ html(lang="ru")
         //-   +dateDropdown("Date dropdown")
         //-   +dateDropdown("Date dropdown")(value="19.08.2019")
         //- +filterDateDropdown("Filter date dropdown")(value="19 авг - 23 авг")
-        
+        +subTextField("Subscription text field", "Email")

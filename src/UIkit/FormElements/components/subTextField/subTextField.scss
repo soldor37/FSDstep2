@@ -1,0 +1,51 @@
+.subTextField {
+    display: flex;
+    flex-flow: wrap;
+    width: 266px;
+    height: 67px;
+    &__title {
+        margin: 0;
+        width: 1000%;
+        height: 15px;
+        margin-top: 3px;
+    }
+    &__input {
+        width: 320px;
+        height: 44px;
+        background: #ffffff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        &:focus {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+        }
+        &:hover {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+        }
+    }
+    &__arrow {
+        position: relative;
+        left: 230px;
+        top: 34px;
+    }
+    .material-icons {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    input {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        outline: none;
+    }
+    input::placeholder {
+        color: rgba(31, 32, 65, 0.25);
+    }
+    input[type="text"] {
+        color: rgba(31, 32, 65, 0.75);
+        padding-left: 15px;
+    }
+}

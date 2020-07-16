@@ -1,0 +1,6 @@
+mixin subTextField(title, placeholder)
+    form.subTextField
+        p.subTextField__title.text-H3
+            |#{title}
+        i.subTextField__arrow.material-icons="arrow_forward"
+        input.subTextField__input(type="text" placeholder=placeholder value!=attributes.value)
