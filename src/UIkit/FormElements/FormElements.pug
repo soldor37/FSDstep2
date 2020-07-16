@@ -2,6 +2,7 @@ include ./components/textField/textField.pug
 include ./components/dropdown/dropdown.pug
 include ./components/maskedTextField/maskedTextField.pug
 include ./components/dateDropdown/dateDropdown.pug
+include ./components/filterDateDropdown/filterDateDropdown.pug
 
 html(lang="ru")
   head
@@ -11,11 +12,12 @@ html(lang="ru")
     .page
       include ../ColorNtype/logo/logo.pug
       .textFieldsNdrops
-        //+textField("Text field", "Default","Email")
-        //+textField("Text field", "Hover / Focus","Email")(value="This is pretty awesome")
-        //+dropdown("Dropdown", "Default","Сколько гостей")
-        //+maskedTextField("Masked text field", "Default")
-        .dropDownGroup
-          +dateDropdown("Date dropdown")
-          +dateDropdown("Date dropdown")(value="2019-08-19")
+        //- +textField("Text field", "Default","Email")
+        //- +textField("Text field", "Hover / Focus","Email")(value="This is pretty awesome")
+        //- +dropdown("Dropdown", "Default","Сколько гостей")
+        //- +maskedTextField("Masked text field", "Default")
+        //- .dropDownGroup
+        //-   +dateDropdown("Date dropdown")
+        //-   +dateDropdown("Date dropdown")(value="19.08.2019")
+        //- +filterDateDropdown("Filter date dropdown")(value="19 авг - 23 авг")
         

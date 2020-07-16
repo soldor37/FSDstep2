@@ -1,7 +1,7 @@
-.dateDropdown {
+.filterDateDropdown {
     display: flex;
     flex-flow: wrap;
-    width: 150px;
+    width: 266px;
     height: 67px;
     margin-right: 20px;
     &__title {
@@ -11,7 +11,7 @@
         margin-top: 3px;
     }
     &__input {
-        width: 150px;
+        width: 266px;
         height: 44px;
         background: #ffffff;
         border: 1px solid rgba(31, 32, 65, 0.25);
@@ -31,7 +31,7 @@
         padding: 3.5px;
         transform: rotate(45deg);
         position: relative;
-        left: 125px;
+        left: 240px;
         top: 24px;
     }
     &__arrow_focus {
