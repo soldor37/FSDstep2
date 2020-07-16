@@ -2,5 +2,5 @@ mixin dateDropdown(title)
     form.dateDropdown
         p.dateDropdown__title.text-H3
             |#{title}
-        .dateDropdown__arrow
         input.dateDropdown__input.datepicker-here(type="text" placeholder="дд.мм.гггг" data-position="right top" value!=attributes.value)
+        .dateDropdown__arrow.material-icons="expand_more"

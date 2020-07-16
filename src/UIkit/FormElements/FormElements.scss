@@ -18,8 +18,23 @@
 //material icons
 @import "/src/assets/fonts/iconfont/material-icons.css";
 
-
+html{
+    max-width: 1440px;
+}
 .dropDownGroup{
     display: flex;
     flex-flow: row;
+}
+.textFieldsNdrops{
+    margin-left: 141px;
+    margin-top: 68px;
+}
+.dateDropdownsDefault{
+    margin-top: 42px;
+}
+.filterDateDefault{
+    margin-top: 40px;
+}
+.subTxtDefault{
+    margin-top: 40px;
 }

@@ -13,12 +13,19 @@ html(lang="ru")
     .page
       include ../ColorNtype/logo/logo.pug
       .textFieldsNdrops
-        //- +textField("Text field", "Default","Email")
-        //- +textField("Text field", "Hover / Focus","Email")(value="This is pretty awesome")
-        //- +dropdown("Dropdown", "Default","Сколько гостей")
-        //- +maskedTextField("Masked text field", "Default")
-        //- .dropDownGroup
-        //-   +dateDropdown("Date dropdown")
-        //-   +dateDropdown("Date dropdown")(value="19.08.2019")
-        //- +filterDateDropdown("Filter date dropdown")(value="19 авг - 23 авг")
-        +subTextField("Subscription text field", "Email")
+        .txtFieldDefault
+          +textField("Text field", "Default","Email")
+        .txtFieldHover
+          +textField("Text field", "Hover / Focus","Email")(value="This is pretty awesome")
+        .dropDownDefault
+          +dropdown("Dropdown", "Default","Сколько гостей")
+        .maskedFieldDefault
+          +maskedTextField("Masked text field", "Default")
+        .dateDropdownsDefault
+          .dropDownGroup
+            +dateDropdown("Date dropdown")
+            +dateDropdown("Date dropdown")(value="19.08.2019")
+        .filterDateDefault
+          +filterDateDropdown("Filter date dropdown")(value="19 авг - 23 авг")
+        .subTxtDefault
+          +subTextField("Subscription text field", "Email")

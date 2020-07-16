@@ -2,5 +2,5 @@ mixin filterDateDropdown(title)
     form.filterDateDropdown
         p.filterDateDropdown__title.text-H3
             |#{title}
-        .filterDateDropdown__arrow
         input.filterDateDropdown__input.datepicker-here(type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="дд мм - дд мм" value!=attributes.value)
+        .filterDateDropdown__arrow.material-icons="expand_more"

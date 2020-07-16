@@ -1,13 +1,13 @@
 .subTextField {
     display: flex;
+    position: relative;
     flex-flow: wrap;
     width: 266px;
-    height: 67px;
+    height: 65px;
     &__title {
         margin: 0;
         width: 1000%;
         height: 15px;
-        margin-top: 3px;
     }
     &__input {
         width: 320px;
@@ -24,9 +24,9 @@
         }
     }
     &__arrow {
-        position: relative;
-        left: 230px;
-        top: 34px;
+        position: absolute;
+        left: 232px;
+        top: 28px;
     }
     .material-icons {
         background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);

@@ -1,14 +1,13 @@
 .filterDateDropdown {
+    position: relative;
     display: flex;
     flex-flow: wrap;
     width: 266px;
-    height: 67px;
-    margin-right: 20px;
+    height: 65px;
     &__title {
         margin: 0;
         width: 100%;
         height: 15px;
-        margin-top: 3px;
     }
     &__input {
         width: 266px;
@@ -25,19 +24,17 @@
         }
     }
     &__arrow {
-        border: solid rgb(31, 32, 65, 0.5);
-        border-width: 0px 2px 2px 0px;
-        display: inline-block;
-        padding: 3.5px;
-        transform: rotate(45deg);
-        position: relative;
-        left: 240px;
-        top: 24px;
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        left: 232px;
+        top: 30px;
     }
-    &__arrow_focus {
-        border: solid rgb(31, 32, 65, 0.75);
-        border-width: 0px 2px 2px 0px;
-        //transform: rotate(-135deg);
+    .material-icons {
+        background: rgba(31, 32, 65, 0.5);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     input {
         font-family: "Montserrat";

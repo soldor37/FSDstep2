@@ -4,8 +4,8 @@ mixin dropdown(title, subtitle, name)
             |#{title}
         p.dropdown__subtitle.text-H3
             |#{subtitle}
-        .dropdown__arrow
         select.dropdown__input
             option(hidden selected disabled value="")=name
             option="Test"
+        .dropdown__arrow.material-icons="expand_more"
         
