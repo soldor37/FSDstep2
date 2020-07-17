@@ -1,0 +1,10 @@
+mixin checkbox()
+    form.checkboxGroup
+        p.checkboxGroup__title.text-H3="Checkbox buttons"
+        .checkboxGroup__options
+            input.checkboxGroup__item(type="checkbox" id="smoke")
+            label.checkboxGroup__label.text-Body(for="smoke")="Можно курить"
+            input.checkboxGroup__item(type="checkbox" id="pet" checked)
+            label.checkboxGroup__label.text-Body(for="pet")="Можно с питомцами"
+            input.checkboxGroup__item(type="checkbox" id="guest" checked)
+            label.checkboxGroup__label.text-Body(for="guest")="Можно пригласить гостей (до 10 человек)"

@@ -12,6 +12,10 @@
 @import "./components/filterDateDropdown/filterDateDropdown.scss";
 //textField
 @import "./components/subTextField/subTextField.scss";
+//checkbox
+@import "./components/checkbox/checkbox.scss";
+
+
 //air DP css/ min.css
 @import "/node_modules/air-datepicker/dist/css/datepicker.css";
 @import "/node_modules/air-datepicker/dist/css/datepicker.min.css";
@@ -28,13 +32,17 @@ html{
 .textFieldsNdrops{
     margin-left: 141px;
     margin-top: 68px;
+    .dateDropdownsDefault{
+        margin-top: 42px;
+    }
+    .filterDateDefault{
+        margin-top: 40px;
+    }
+    .subTxtDefault{
+        margin-top: 40px;
+    }
 }
-.dateDropdownsDefault{
-    margin-top: 42px;
-}
-.filterDateDefault{
-    margin-top: 40px;
-}
-.subTxtDefault{
-    margin-top: 40px;
+.specialButtons{
+    margin-top: 58px;
+    margin-left: 106px;
 }

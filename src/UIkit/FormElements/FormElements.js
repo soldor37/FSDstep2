@@ -3,7 +3,7 @@ import FormElements from './FormElements.scss'
 // import jQuery from 'jquery';
 // window.$ = $;
 // window.jQuery = jQuery;
-
+import '../../assets/svg/checkboxArr.svg'
 import 'air-datepicker/dist/js/datepicker'
 
 
