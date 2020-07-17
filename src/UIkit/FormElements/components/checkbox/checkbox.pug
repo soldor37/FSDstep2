@@ -1,6 +1,6 @@
-mixin checkbox()
+mixin checkbox(title)
     form.checkboxGroup
-        p.checkboxGroup__title.text-H3="Checkbox buttons"
+        p.checkboxGroup__title.text-H3=title
         .checkboxGroup__options
             input.checkboxGroup__item(type="checkbox" id="smoke")
             label.checkboxGroup__label.text-Body(for="smoke")="Можно курить"

@@ -5,6 +5,7 @@ include ./components/dateDropdown/dateDropdown.pug
 include ./components/filterDateDropdown/filterDateDropdown.pug
 include ./components/subTextField/subTextField.pug
 include ./components/checkbox/checkbox.pug
+include ./components/radioButtons/radioButtons.pug
 
 html(lang="ru")
   head
@@ -31,4 +32,7 @@ html(lang="ru")
         .subTxtDefault
           +subTextField("Subscription text field", "Email")
       .specialButtons
-        +checkbox
+        .checkbox__elem
+          +checkbox("Checkbox buttons")
+        .radioButtons__elem
+          +radioButtons("Radio buttons")
