@@ -1,0 +1,85 @@
+.likeButton {
+    &__title {
+        margin-top: 0px;
+        margin-bottom: 17px;
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 14px;
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            margin-right: 10px;
+            /* спрятать дефолтный чекбокс */
+            input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+            .switch__slider {
+                font-size: 10px;
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ffffff;
+                border-radius: 10px;
+                border: 1px solid #bc9cff;
+            }
+            .switch__count {
+                position: absolute;
+                font-size: 10px;
+                margin-top: 3px;
+                margin-left: 14px;
+                color: #bc9cff;
+                user-select: none;
+                cursor: pointer;
+            }
+            .switch__icon {
+                position: absolute;
+                font-size: 10px;
+                top: 4.5px;
+                left: 5px;
+                user-select: none;
+                cursor: pointer;
+            }
+            .switch__icon:after{
+                content: "favorite";
+            }
+            .material-icons {
+                background: #bc9cff;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            input:not(:checked) + .switch__slider {
+                border: 1px solid rgba(31, 32, 65, 0.25);
+            }
+            input:not(:checked) ~ .switch__count {
+                color: rgba(31, 32, 65, 0.25);
+            }
+            input:not(:checked) ~ .switch__icon:after {
+                content: "favorite_border"
+            }
+            input:not(:checked) ~ .material-icons {
+                background: rgba(31, 32, 65, 0.25);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            // input:focus + .switch__slider {
+            //     box-shadow: 0 0 1px #2196f3;
+            // }
+
+            // input:checked + .switch__slider:before {
+            //     // -webkit-transform: translateX(20px);
+            //     // -ms-transform: translateX(20px);
+            //     // transform: translateX(20px);
+            // }
+        }
+    }
+}

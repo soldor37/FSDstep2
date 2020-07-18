@@ -7,6 +7,7 @@ include ./components/subTextField/subTextField.pug
 include ./components/checkbox/checkbox.pug
 include ./components/radioButtons/radioButtons.pug
 include ./components/toggle/toggle.pug
+include ./components/likeButton/likeButton.pug
 
 html(lang="ru")
   head
@@ -40,3 +41,8 @@ html(lang="ru")
         .specialButtons__toggle
           +toggle("Toggle","Получать спецпредложения",true)
           +toggle("","Получать спецпредложения")
+        .specialButtons__like
+          p.likeButton__title.text-H3="Like button"
+          .like__buttons
+            +likeButton(false, 2)
+            +likeButton(true, 12)

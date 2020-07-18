@@ -18,6 +18,8 @@
 @import "./components/radioButtons/radioButtons.scss";
 //toggle
 @import "./components/toggle/toggle.scss";
+//like btn
+@import "./components/likeButton/likeButton.scss";
 
 
 //air DP css/ min.css
@@ -55,4 +57,10 @@ html{
 }
 .specialButtons__toggle{
     margin-top: 41.5px;
+}
+.specialButtons__like{
+    .like__buttons{
+        display: flex;
+    }
+    margin-top: 44.5px;
 }

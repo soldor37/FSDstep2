@@ -1,0 +1,10 @@
+mixin likeButton(check, value)
+    .likeButton 
+        .likeButton__item
+            label.switch
+                input.switch__input(type="checkbox" checked=check)
+                span.switch__slider
+                i.switch__icon.material-icons
+                label.switch__count.text-Body=value
+                
+        
