@@ -6,6 +6,7 @@ include ./components/filterDateDropdown/filterDateDropdown.pug
 include ./components/subTextField/subTextField.pug
 include ./components/checkbox/checkbox.pug
 include ./components/radioButtons/radioButtons.pug
+include ./components/toggle/toggle.pug
 
 html(lang="ru")
   head
@@ -32,7 +33,10 @@ html(lang="ru")
         .subTxtDefault
           +subTextField("Subscription text field", "Email")
       .specialButtons
-        .checkbox__elem
+        .specialButtons__checkbox
           +checkbox("Checkbox buttons")
-        .radioButtons__elem
+        .specialButtons__radioButtons
           +radioButtons("Radio buttons")
+        .specialButtons__toggle
+          +toggle("Toggle","Получать спецпредложения",true)
+          +toggle("","Получать спецпредложения")

@@ -1,0 +1,10 @@
+mixin toggle(title,name, check)
+    .toggle
+        if title
+            p.toggle__title.text-H3=title
+        .toggle__item
+            label.switch
+                input.switch__input(type="checkbox" checked=check)
+                span.switch__slider
+            span.switch__name.text-Body=name
+        

@@ -2,7 +2,7 @@ mixin radioButtons(title)
     .radioButtons
         if title
             p.radioButtons__title.text-H3=title
-        input.radioButtons__btn(type="radio" name="gender" id="radio_man")
+        input.radioButtons__btn(type="radio" name="gender" id="radio_man" checked)
         label.radioButtons__label.text-Body(for="radio_man")="Мужчина"
         input.radioButtons__btn(type="radio" name="gender" id="radio_woman")
         label.radioButtons__label.text-Body(for="radio_woman")="Женщина"

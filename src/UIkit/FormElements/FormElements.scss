@@ -16,6 +16,8 @@
 @import "./components/checkbox/checkbox.scss";
 //radio btns
 @import "./components/radioButtons/radioButtons.scss";
+//toggle
+@import "./components/toggle/toggle.scss";
 
 
 //air DP css/ min.css
@@ -48,6 +50,9 @@ html{
     margin-top: 58px;
     margin-left: 106px;
 }
-.radioButtons__elem{
+.specialButtons__radioButtons{
     margin-top: 36.5px;
+}
+.specialButtons__toggle{
+    margin-top: 41.5px;
 }
