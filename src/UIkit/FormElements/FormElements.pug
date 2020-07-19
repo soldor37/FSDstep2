@@ -8,6 +8,7 @@ include ./components/checkbox/checkbox.pug
 include ./components/radioButtons/radioButtons.pug
 include ./components/toggle/toggle.pug
 include ./components/likeButton/likeButton.pug
+include ./components/rateButton/rateButton.pug
 
 html(lang="ru")
   head
@@ -46,3 +47,7 @@ html(lang="ru")
           .like__buttons
             +likeButton(false, 2)
             +likeButton(true, 12)
+        .specialButtons__rate
+          p.rateButton__title.text-H3="Rate button"
+          .rate__buttons
+            +rateButton

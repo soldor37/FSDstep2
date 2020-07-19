@@ -1,0 +1,57 @@
+.rateButton {
+    > fieldset {
+        border: none;
+        display: inline-block;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-block-start: 0em;
+        padding-inline-start: 0em;
+        padding-inline-end: 0em;
+        padding-block-end: 0em;
+        .material-icons {
+            background: #bc9cff;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:not(:checked) {
+            > input {
+                position: absolute;
+                top: -9999px;
+                clip: rect(0, 0, 0, 0);
+            }
+
+            > label {
+                float: right;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                color: #BC9CFF;
+
+                &:before {
+                    content: "star_border";
+                }
+
+                &:hover,
+                &:hover ~ label {
+                    color: #BC9CFF;
+                    &:before {
+                        content: "star";
+                    }
+                }
+            }
+        }
+        > input:checked {
+            & ~ label {
+                &:before {
+                    content: "star";
+                }
+            }
+        }
+
+        > label:active {
+            position: relative;
+            top: 2px;
+        }
+    }
+}

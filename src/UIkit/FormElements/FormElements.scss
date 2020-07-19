@@ -20,6 +20,8 @@
 @import "./components/toggle/toggle.scss";
 //like btn
 @import "./components/likeButton/likeButton.scss";
+//rate btn
+@import "./components/rateButton/rateButton.scss";
 
 
 //air DP css/ min.css
@@ -63,4 +65,11 @@ html{
         display: flex;
     }
     margin-top: 44.5px;
+}
+.specialButtons__rate{
+    .rateButton__title{
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    margin-top: 27.5px;
 }
