@@ -55,7 +55,7 @@ html{
     margin-left: 106px;
 }
 .specialButtons__radioButtons{
-    margin-top: 36.5px;
+    margin-top: 33.5px;
 }
 .specialButtons__toggle{
     margin-top: 41.5px;
@@ -64,7 +64,7 @@ html{
     .like__buttons{
         display: flex;
     }
-    margin-top: 44.5px;
+    margin-top: 43.5px;
 }
 .specialButtons__rate{
     .rateButton__title{
@@ -72,4 +72,10 @@ html{
         margin-bottom: 15px;
     }
     margin-top: 27.5px;
+    .rate__buttons{
+        display: flex;
+        .rateButton{
+            margin-right: 20px;
+        }
+    }
 }
