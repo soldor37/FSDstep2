@@ -1,0 +1,9 @@
+mixin rangeSlider(title)
+    .rangeSlider
+        if title
+            p.rangeSlider__title.text-H3=title
+        .rangeSlider__value.text-Body
+            .value__from="1000"
+            .value__dash="-"
+            .value__to="3000"
+        input.rangeSlider__slider(type="text" class="js-range-slider" value="")

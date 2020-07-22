@@ -5,8 +5,12 @@ import FormElements from './FormElements.scss'
 // window.jQuery = jQuery;
 import '../../assets/svg/checkboxArr.svg'
 import '../../assets/svg/circle.svg'
+//range slider js
+import './components/rangeSlider/ion.rangeSlider'
+import './components/rangeSlider/rangeSlider'
 
 import 'air-datepicker/dist/js/datepicker'
+
 
 
 

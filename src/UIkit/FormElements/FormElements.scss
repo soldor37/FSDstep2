@@ -22,11 +22,16 @@
 @import "./components/likeButton/likeButton.scss";
 //rate btn
 @import "./components/rateButton/rateButton.scss";
+//range slider
+@import "./components/rangeSlider/rangeSlider.scss";
 
 
 //air DP css/ min.css
 @import "/node_modules/air-datepicker/dist/css/datepicker.css";
 @import "/node_modules/air-datepicker/dist/css/datepicker.min.css";
+//rangeslider
+// @import "/node_modules/ion-rangeslider/css/ion.rangeSlider.css";
+// @import "/node_modules/ion-rangeslider/css/ion.rangeSlider.min.css";
 //material icons
 @import "/src/assets/fonts/iconfont/material-icons.css";
 
@@ -78,4 +83,8 @@ html{
             margin-right: 20px;
         }
     }
+}
+.commonButtons{
+    margin-top: 66px;
+    margin-left: 112px;
 }
