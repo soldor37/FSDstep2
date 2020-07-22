@@ -1,0 +1,12 @@
+mixin button(type,name)
+    .button
+        if type == 'fill'
+            button.button__fill.text-H3=name
+        if type == 'empty'
+            button.button__empty.text-H3=name
+            .button__empty_border
+        if type == 'link'
+            a.button__link.text-H3=name
+        if type == 'long'
+            i.button__long_arrow.material-icons="arrow_forward"
+            button.button__long.text-H3=name

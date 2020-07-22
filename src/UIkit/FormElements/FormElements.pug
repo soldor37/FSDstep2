@@ -10,6 +10,7 @@ include ./components/toggle/toggle.pug
 include ./components/likeButton/likeButton.pug
 include ./components/rateButton/rateButton.pug
 include ./components/rangeSlider/rangeSlider.pug
+include ./components/button/button.pug
 
 html(lang="ru")
   head
@@ -56,3 +57,23 @@ html(lang="ru")
       .commonButtons
         .commonButtons__rangeSlider
           +rangeSlider("Range slider")
+        .commonButtons__buttonGroup
+          p.buttonGroup__title.text-H3="Buttons"
+          .buttonGroup__filled
+            .buttonGroup__filled_default
+              +button("fill","Click me")
+            .buttonGroup__filled_hover
+              +button("fill","Click me")
+          .buttonGroup__empty
+            .buttonGroup__empty_default
+              +button("empty","Click me")
+            .buttonGroup__empty_hover
+              +button("empty","Click me")
+          .buttonGroup__link
+            .buttonGroup__link_default
+              +button("link","Click me")
+            .buttonGroup__link_hover
+              +button("link","Click me")
+          .buttonGroup__long
+            .buttonGroup__long_default
+              +button("long","Перейти к оплате")

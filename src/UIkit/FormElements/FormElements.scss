@@ -24,6 +24,8 @@
 @import "./components/rateButton/rateButton.scss";
 //range slider
 @import "./components/rangeSlider/rangeSlider.scss";
+//usual button
+@import "./components/button/button.scss";
 
 
 //air DP css/ min.css
@@ -87,4 +89,42 @@ html{
 .commonButtons{
     margin-top: 66px;
     margin-left: 112px;
+    .commonButtons__buttonGroup{
+        margin-top: 35px;
+        .buttonGroup__title{
+            margin: 0;
+            margin-bottom: 15px;
+        }
+        .buttonGroup__filled{
+            display: flex;
+            &_default{
+                margin-left: 1px;
+                margin-right: 19px;
+            }
+        }
+        .buttonGroup__empty{
+            display: flex;
+            margin-top: 30px;
+            &_default{
+                margin-left: 1px;
+                margin-right: 19px;
+            }
+        }
+        .buttonGroup__link{
+            display: flex;
+            margin-top: 32px;
+            &_default{
+                margin-left: 0px;
+                margin-right: 19px;
+            }
+        }
+        .buttonGroup__long{
+            display: flex;
+            margin-top: 32px;
+            &_default{
+                margin-left: 0px;
+                margin-right: 19px;
+            }
+        }
+    }
 }
