@@ -11,6 +11,7 @@ include ./components/likeButton/likeButton.pug
 include ./components/rateButton/rateButton.pug
 include ./components/rangeSlider/rangeSlider.pug
 include ./components/button/button.pug
+include ./components/pagination/pagination.pug
 
 html(lang="ru")
   head
@@ -77,3 +78,6 @@ html(lang="ru")
           .buttonGroup__long
             .buttonGroup__long_default
               +button("long","Перейти к оплате")
+        .commonButtons__pagination
+          p.pagination__title.text-H3="Pagination"
+          +pagination("1 – 12 из 100+ вариантов аренды")

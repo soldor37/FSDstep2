@@ -68,16 +68,17 @@
         &:hover {
             opacity: 0.5;
         }
+        &__arrow {
+            background: #FFFFFF;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: absolute;
+            display: block;
+            font-family: "Material icons";
+            margin-left: 287px;
+            margin-top: 10px;
+        }
     }
-    .button__long_arrow {
-        background: #ffffff;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: absolute;
-        display: block;
-        font-family: "Material icons";
-        margin-left: 287px;
-        margin-top: 10px;
-    }
+    
 }

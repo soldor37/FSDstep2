@@ -8,8 +8,11 @@ import '../../assets/svg/circle.svg'
 //range slider js
 import './components/rangeSlider/ion.rangeSlider'
 import './components/rangeSlider/rangeSlider'
-
+//air datepicker
 import 'air-datepicker/dist/js/datepicker'
+//pagination
+import './components/pagination/jquery.simplePagination'
+import './components/pagination/pagination'
 
 
 

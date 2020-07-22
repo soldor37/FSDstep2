@@ -1,0 +1,109 @@
+/**
+* CSS themes for simplePagination.js
+* Author: Flavius Matis - http://flaviusmatis.github.com/
+* URL: https://github.com/flaviusmatis/simplePagination.js
+*/
+
+ul.simple-pagination {
+	list-style: none;
+}
+
+.simple-pagination {
+	display: block;
+	overflow: hidden;
+	padding: 0 5px 5px 0;
+	margin: 0;
+}
+
+.simple-pagination ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.simple-pagination li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+span.ellipse.clickable {
+	cursor: pointer;
+}
+
+.ellipse input {
+	width: 3em;
+}
+
+/*------------------------------------*\
+	Light Theme Styles
+\*------------------------------------*/
+.light-theme span {
+	cursor: pointer;
+}
+
+.pagination a,
+.light-theme span {
+	text-decoration: none;
+	display: flex;
+	float: left;
+	color: rgba(31, 32, 65, 0.5);
+	font-size: 12px;
+	line-height: 15px;
+	font-family: "Montserrat";
+	font-weight: normal;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	/* background: #efefef; Old browsers */
+	/* background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); FF3.6+ */
+	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef)); Chrome,Safari4+ */
+	/* background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 100%); Chrome10+,Safari5.1+ */
+	/* background: -o-linear-gradient(top, #ffffff 0%,#efefef 100%); Opera11.10+ */
+	/* background: -ms-linear-gradient(top, #ffffff 0%,#efefef 100%); IE10+ */
+	/* background: linear-gradient(top, #ffffff 0%,#efefef 100%); W3C */
+}
+.pagination {
+	.next {
+		border-radius: 22px;
+		background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+		font-family: "Material icons";
+		color: #ffffff;
+		display: flex;
+		justify-content: center;
+		font-size: 24px;
+		line-height: 1;
+		word-wrap: normal;
+	}
+}
+.light-theme a:hover,
+.light-theme li:not(.disabled):not(.active) span:hover {
+	opacity: 0.5;
+}
+
+.light-theme .current {
+	width: 40px;
+	height: 40px;
+	font-weight: bold;
+	background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+	color: #ffffff;
+	border: 0;
+	cursor: default;
+	border-radius: 22px;
+	&.prev {
+		display: none;
+	}
+}
+
+.light-theme .ellipse {
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	font-weight: bold;
+	cursor: default;
+}

@@ -26,6 +26,9 @@
 @import "./components/rangeSlider/rangeSlider.scss";
 //usual button
 @import "./components/button/button.scss";
+//pagination
+@import "./components/pagination/pagination.scss";
+@import "./components/pagination/simplePagination.scss";
 
 
 //air DP css/ min.css
@@ -125,6 +128,14 @@ html{
                 margin-left: 0px;
                 margin-right: 19px;
             }
+        }
+    }
+    .commonButtons__pagination{
+        margin-top: 40px;
+        .pagination__title{
+            margin: 0;
+            margin-bottom: 15px;
+            
         }
     }
 }
