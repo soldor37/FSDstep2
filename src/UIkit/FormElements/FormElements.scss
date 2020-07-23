@@ -41,6 +41,7 @@
 @import "/src/assets/fonts/iconfont/material-icons.css";
 
 html{
+    font-size: 12px;
     max-width: 1440px;
 }
 .dropDownGroup{
@@ -48,93 +49,102 @@ html{
     flex-flow: row;
 }
 .textFieldsNdrops{
-    margin-left: 141px;
-    margin-top: 68px;
+    margin-left: 11.75rem;
+    margin-top: 5.4667rem;
+    .txtFieldHover{
+       margin-top: 1.5rem;
+    }
+    .dropDownDefault{
+        margin-top: 1.37rem;
+    }
     .dateDropdownsDefault{
-        margin-top: 42px;
+        margin-top: 3.4rem;
+    }
+    .maskedFieldDefault{
+        margin-top: 1.37rem;
     }
     .filterDateDefault{
-        margin-top: 40px;
+        margin-top: 3.3333rem;
     }
     .subTxtDefault{
-        margin-top: 40px;
+        margin-top: 3.3333rem;
     }
 }
 .specialButtons{
-    margin-top: 58px;
-    margin-left: 106px;
+    margin-top: 4.8333rem;
+    margin-left: 8.8333rem;
 }
 .specialButtons__radioButtons{
-    margin-top: 33.5px;
+    margin-top: 2.8rem;
 }
 .specialButtons__toggle{
-    margin-top: 41.5px;
+    margin-top: 3.4583rem;
 }
 .specialButtons__like{
     .like__buttons{
         display: flex;
     }
-    margin-top: 43.5px;
+    margin-top: 3.625rem;
 }
 .specialButtons__rate{
     .rateButton__title{
         margin-top: 0;
-        margin-bottom: 15px;
+        margin-bottom: 1.25rem;
     }
-    margin-top: 27.5px;
+    margin-top: 2.2917rem;
     .rate__buttons{
         display: flex;
         .rateButton{
-            margin-right: 20px;
+            margin-right: 1.6667rem;
         }
     }
 }
 .commonButtons{
-    margin-top: 66px;
-    margin-left: 112px;
+    margin-top: 5.5rem;
+    margin-left: 9.3333rem;
     .commonButtons__buttonGroup{
-        margin-top: 35px;
+        margin-top: 2.9167rem;
         .buttonGroup__title{
             margin: 0;
-            margin-bottom: 15px;
+            margin-bottom: 1.25rem;
         }
         .buttonGroup__filled{
             display: flex;
             &_default{
-                margin-left: 1px;
-                margin-right: 19px;
+                margin-left: 0.0833rem;
+                margin-right: 1.5833rem;
             }
         }
         .buttonGroup__empty{
             display: flex;
-            margin-top: 30px;
+            margin-top: 2.5rem;
             &_default{
-                margin-left: 1px;
-                margin-right: 19px;
+                margin-left: 0.0833rem;
+                margin-right: 1.5833rem;
             }
         }
         .buttonGroup__link{
             display: flex;
-            margin-top: 32px;
+            margin-top: 2.6667rem;
             &_default{
-                margin-left: 0px;
-                margin-right: 19px;
+                margin-left: 0rem;
+                margin-right: 1.5833rem;
             }
         }
         .buttonGroup__long{
             display: flex;
-            margin-top: 32px;
+            margin-top: 2.6667rem;
             &_default{
-                margin-left: 0px;
-                margin-right: 19px;
+                margin-left: 0rem;
+                margin-right: 1.5833rem;
             }
         }
     }
     .commonButtons__pagination{
-        margin-top: 40px;
+        margin-top: 3.3333rem;
         .pagination__title{
             margin: 0;
-            margin-bottom: 15px;
+            margin-bottom: 1.25rem;
             
         }
     }

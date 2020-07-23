@@ -1,12 +1,12 @@
 .text-field {
     display: flex;
     flex-flow: wrap;
-    width: 320px;
-    height: 67px;
+    width: 26.6667rem;
+    height: 5.5833rem;
     .text-field__title {
         margin: 0;
         width: 50%;
-        height: 15px;
+        height: 1.25rem;
     }
     .text-field__subtitle {
         text-align: right;
@@ -14,24 +14,24 @@
         color: rgba(31, 32, 65, 0.5);
         margin: 0;
         width: 50%;
-        height: 15px;
+        height: 1.25rem;
     }
     .text-field__input {
-        width: 320px;
-        height: 44px;
+        width: 26.6667rem;
+        height: 3.6667rem;
         background: #ffffff;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 0.0833rem solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
-        border-radius: 4px;
+        border-radius: 0.3333rem;
         &:focus{
-            border: 1px solid rgba(31, 32, 65, 0.5);
+            border: 0.0833rem solid rgba(31, 32, 65, 0.5);
         }
         &:hover{
-            border: 1px solid rgba(31, 32, 65, 0.5);
+            border: 0.0833rem solid rgba(31, 32, 65, 0.5);
         }
     }
     input{
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -42,7 +42,7 @@
     }
     input[type="text"]{
         color: rgba(31, 32, 65, 0.75);
-        padding-left: 14px;
-        padding-bottom: 4px;
+        padding-left: 1.1667rem;
+        padding-bottom: 0.3333rem;
     }
 }

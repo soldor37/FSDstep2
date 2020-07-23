@@ -1,26 +1,26 @@
 .text-field_masked {
     display: flex;
     flex-flow: wrap;
-    width: 320px;
-    height: 67px;
+    width: 26.6667rem;
+    height: 5.5833rem;
     .text-field__title {
         margin: 0;
         width: 50%;
-        height: 15px;
-        margin-top: 3px;
+        height: 1.25rem;
+        margin-top: 0.25rem;
     }
     .text-field__subtitle {
         text-align: right;
         font-weight: normal;
         color: rgba(31, 32, 65, 0.5);
         margin: 0;
-        margin-bottom: 8px;
+        margin-bottom: 0.6667rem;
         width: 50%;
-        height: 15px;
+        height: 1.25rem;
     }
     .text-field__input {
-        width: 320px;
-        height: 44px;
+        width: 26.6667rem;
+        height: 3.6667rem;
         background: #ffffff;
         border: 1px solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
@@ -44,7 +44,7 @@
         font-size: 14px;
         color: rgba(31, 32, 65, 0.25);
         text-transform: uppercase;
-        margin-left: 12px;
+        margin-left: 1rem;
     }
     input {
         font-family: "Montserrat";
@@ -58,6 +58,6 @@
     }
     input[type="text"] {
         color: rgba(31, 32, 65, 0.75);
-        padding-left: 15px;
+        padding-left: 1.25rem;
     }
 }

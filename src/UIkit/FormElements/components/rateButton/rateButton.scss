@@ -2,8 +2,8 @@
     > fieldset {
         border: none;
         display: inline-block;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
+        margin-inline-start: 0rem;
+        margin-inline-end: 0rem;
         padding-block-start: 0em;
         padding-inline-start: 0em;
         padding-inline-end: 0em;
@@ -51,7 +51,7 @@
 
         > label:active {
             position: relative;
-            top: 2px;
+            top: 0.1667rem;
         }
     }
 }
