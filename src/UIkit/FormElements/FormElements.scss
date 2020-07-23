@@ -30,7 +30,6 @@
 @import "./components/pagination/pagination.scss";
 @import "./components/pagination/simplePagination.scss";
 
-
 //air DP css/ min.css
 @import "/node_modules/air-datepicker/dist/css/datepicker.css";
 @import "/node_modules/air-datepicker/dist/css/datepicker.min.css";
@@ -40,112 +39,132 @@
 //material icons
 @import "/src/assets/fonts/iconfont/material-icons.css";
 
-html{
+html {
     font-size: 12px;
     max-width: 1440px;
 }
-.dropDownGroup{
+.dropDownGroup {
     display: flex;
     flex-flow: row;
 }
-.textFieldsNdrops{
+.textFieldsNdrops {
     margin-left: 11.75rem;
     margin-top: 5.4667rem;
-    .txtFieldHover{
-       margin-top: 1.5rem;
+    .txtFieldHover {
+        margin-top: 1.5rem;
     }
-    .dropDownDefault{
+    .dropDownDefault {
         margin-top: 1.37rem;
     }
-    .dateDropdownsDefault{
-        margin-top: 3.4rem;
+    .dateDropdownsDefault {
+        margin-top: 3.45rem;
     }
-    .maskedFieldDefault{
-        margin-top: 1.37rem;
+    .maskedFieldDefault {
+        margin-top: 1.55rem;
     }
-    .filterDateDefault{
+    .filterDateDefault {
         margin-top: 3.3333rem;
     }
-    .subTxtDefault{
+    .subTxtDefault {
         margin-top: 3.3333rem;
     }
 }
-.specialButtons{
+.specialButtons {
     margin-top: 4.8333rem;
     margin-left: 8.8333rem;
 }
-.specialButtons__radioButtons{
+.specialButtons__radioButtons {
     margin-top: 2.8rem;
 }
-.specialButtons__toggle{
+.specialButtons__toggle {
     margin-top: 3.4583rem;
 }
-.specialButtons__like{
-    .like__buttons{
+.specialButtons__like {
+    .like__buttons {
         display: flex;
     }
     margin-top: 3.625rem;
 }
-.specialButtons__rate{
-    .rateButton__title{
+.specialButtons__rate {
+    .rateButton__title {
         margin-top: 0;
         margin-bottom: 1.25rem;
     }
     margin-top: 2.2917rem;
-    .rate__buttons{
+    .rate__buttons {
         display: flex;
-        .rateButton{
+        .rateButton {
             margin-right: 1.6667rem;
         }
     }
 }
-.commonButtons{
+.commonButtons {
     margin-top: 5.5rem;
     margin-left: 9.3333rem;
-    .commonButtons__buttonGroup{
+    .commonButtons__buttonGroup {
         margin-top: 2.9167rem;
-        .buttonGroup__title{
+        .buttonGroup__title {
             margin: 0;
             margin-bottom: 1.25rem;
         }
-        .buttonGroup__filled{
+        .buttonGroup__filled {
             display: flex;
-            &_default{
+            &_default {
                 margin-left: 0.0833rem;
                 margin-right: 1.5833rem;
             }
         }
-        .buttonGroup__empty{
+        .buttonGroup__empty {
             display: flex;
             margin-top: 2.5rem;
-            &_default{
+            &_default {
                 margin-left: 0.0833rem;
                 margin-right: 1.5833rem;
             }
         }
-        .buttonGroup__link{
+        .buttonGroup__link {
             display: flex;
             margin-top: 2.6667rem;
-            &_default{
+            &_default {
                 margin-left: 0rem;
                 margin-right: 1.5833rem;
             }
         }
-        .buttonGroup__long{
+        .buttonGroup__long {
             display: flex;
             margin-top: 2.6667rem;
-            &_default{
+            &_default {
                 margin-left: 0rem;
                 margin-right: 1.5833rem;
             }
         }
     }
-    .commonButtons__pagination{
+    .commonButtons__pagination {
         margin-top: 3.3333rem;
-        .pagination__title{
+        .pagination__title {
             margin: 0;
             margin-bottom: 1.25rem;
-            
+        }
+    }
+}
+.expandedComponents {
+    margin-top: 7.1333rem;
+    margin-left: 11.6667rem;
+    display: flex;
+    flex-flow: row;
+    .dropdowns__furniture {
+        display: flex;
+        flex-flow: column;
+        .dropdowns__furniture_expanded {
+            margin-top: 1.6167rem;
+        }
+    }
+    .dropdowns__guests {
+        display: flex;
+        flex-flow: row;
+        margin-left: 15.0833rem;
+        .dropdowns__guests_filled {
+            margin-left: 5.9833rem;
         }
     }
 }

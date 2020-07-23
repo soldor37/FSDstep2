@@ -26,7 +26,7 @@ html(lang="ru")
         .txtFieldHover
           +textField("Text field", "Hover / Focus","Email")(value="This is pretty awesome")
         .dropDownDefault
-          +dropdown("Dropdown", "Default","Сколько гостей")
+          +dropdown("Dropdown", "Default","guest")
         .maskedFieldDefault
           +maskedTextField("Masked text field", "Default")
         .dateDropdownsDefault
@@ -81,3 +81,14 @@ html(lang="ru")
         .commonButtons__pagination
           p.pagination__title.text-H3="Pagination"
           +pagination("1 – 12 из 100+ вариантов аренды")
+      .expandedComponents
+        .dropdowns__furniture
+          .dropdowns__furniture_default
+            +dropdown("Dropdown","Defauld","furn")
+          .dropdowns__furniture_expanded
+            +dropdown("Dropdown","Expanded","furn")(class="menu-open")
+        .dropdowns__guests
+          .dropdowns__guests_empty
+            +dropdown("Dropdown","","guest")
+          .dropdowns__guests_filled
+            +dropdown("Dropdown","","guest")(class="menu-open")

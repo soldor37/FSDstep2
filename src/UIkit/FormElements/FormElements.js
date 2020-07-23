@@ -3,6 +3,10 @@ import FormElements from './FormElements.scss'
 // import jQuery from 'jquery';
 // window.$ = $;
 // window.jQuery = jQuery;
+//dropdown item quantitty
+import './components/dropdown/item-quantity-dropdown.min.js'
+import './components/dropdown/dropdown'
+
 import '../../assets/svg/checkboxArr.svg'
 import '../../assets/svg/circle.svg'
 //range slider js

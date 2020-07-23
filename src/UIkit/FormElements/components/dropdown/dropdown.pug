@@ -1,11 +1,44 @@
-mixin dropdown(title, subtitle, name)
-    form.dropdown
+mixin dropdown(title, subtitle, type)
+    .dropdown__name
         p.dropdown__title.text-H3
             |#{title}
+        if(subtitle)
         p.dropdown__subtitle.text-H3
             |#{subtitle}
-        select.dropdown__input
-            option(hidden selected disabled value="")=name
-            option="Test"
-        .dropdown__arrow.material-icons="expand_more"
+    .iqdropdown(class!=attributes.class class=type)
+        p.iqdropdown-selection
+        .iqdropdown-menu
+            .iqdropdown-menu-option(data-id="item1")
+                .item
+                    if(type=="guest")
+                        p.iqdropdown-item="Взрослые"
+                    if(type=="furn")
+                        p.iqdropdown-item="Спальни"
+            .iqdropdown-menu-option(data-id="item2")
+                .item
+                    if(type=="guest")
+                        p.iqdropdown-item="Дети"
+                    if(type=="furn")
+                        p.iqdropdown-item="Кровати"
+            .iqdropdown-menu-option(data-id="item3")
+                .item
+                    if(type=="guest")
+                        p.iqdropdown-item="Младенцы"
+                    if(type=="furn")
+                        p.iqdropdown-item="Ванные комнаты"
+
+
+
+
+
+
+    //- form.dropdown
+    //-     p.dropdown__title.text-H3
+    //-         |#{title}
+    //-     p.dropdown__subtitle.text-H3
+    //-         |#{subtitle}
+    //-     select.dropdown__input
+    //-         option(hidden selected disabled value="")=name
+    //-         option="Test"
+    //-     .dropdown__arrow.material-icons="expand_more"
         
