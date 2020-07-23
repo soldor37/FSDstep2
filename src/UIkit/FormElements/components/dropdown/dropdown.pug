@@ -8,23 +8,25 @@ mixin dropdown(title, subtitle, type)
     .iqdropdown(class!=attributes.class class=type)
         p.iqdropdown-selection
         .iqdropdown-menu
-            .iqdropdown-menu-option(data-id="item1")
-                .item
-                    if(type=="guest")
+            if(type=="guest")
+                .iqdropdown-menu-option(data-id="item1" data-defaultcount="2" data-mincount="1")
+                    .item
                         p.iqdropdown-item="Взрослые"
-                    if(type=="furn")
-                        p.iqdropdown-item="Спальни"
-            .iqdropdown-menu-option(data-id="item2")
-                .item
-                    if(type=="guest")
+                .iqdropdown-menu-option(data-id="item2" data-defaultcount="1")
+                    .item
                         p.iqdropdown-item="Дети"
-                    if(type=="furn")
-                        p.iqdropdown-item="Кровати"
-            .iqdropdown-menu-option(data-id="item3")
-                .item
-                    if(type=="guest")
+                .iqdropdown-menu-option(data-id="item3")
+                    .item
                         p.iqdropdown-item="Младенцы"
-                    if(type=="furn")
+            if(type=="furn")
+                .iqdropdown-menu-option(data-id="item1" data-defaultcount="2" data-mincount="1")
+                    .item
+                        p.iqdropdown-item="Спальни"
+                .iqdropdown-menu-option(data-id="item2" data-defaultcount="2" data-mincount="1")
+                    .item
+                        p.iqdropdown-item="Кровати"
+                .iqdropdown-menu-option(data-id="item3")
+                    .item
                         p.iqdropdown-item="Ванные комнаты"
 
 

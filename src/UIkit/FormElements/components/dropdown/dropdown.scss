@@ -64,6 +64,7 @@
     margin: 0;
     padding: 0;
 }
+
 .iqdropdown select::-ms-expand {
     display: none;
 }
@@ -72,58 +73,28 @@
     height: 0;
     width: 0;
 }
-.iqdropdown .icon-decrement {
-    display: inline-block;
-    height: 15px;
-    margin: auto;
-    min-width: 15px;
-    position: relative;
-    width: 15px;
-}
-.iqdropdown .icon-decrement::after {
-    background: #002674;
-    content: "";
-    display: block;
-    height: 3px;
-    position: absolute;
-    top: 6px;
-    transition: -webkit-transform 0.25s ease-in-out;
-    transition: transform 0.25s ease-in-out;
-    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-    width: 15px;
-}
-.iqdropdown .icon-decrement.icon-increment::before {
-    background: #002674;
-    content: "";
-    display: block;
-    height: 3px;
-    position: absolute;
-    top: 6px;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    transition: -webkit-transform 0.25s ease-in-out;
-    transition: transform 0.25s ease-in-out;
-    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-    width: 15px;
-}
+
 .iqdropdown .iqdropdown-menu {
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 0.1667rem;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
     cursor: default;
     display: none;
-    left: 0;
-    margin: -2px -1px -1px;
+    left: -0.0833rem;
     position: absolute;
-    right: 0;
-    top: 50px;
+    height: 9.8667rem;
+    right: -0.0833rem;
+    top: 3.5rem;
     transition: all 0.2s ease-in-out;
     z-index: 99999;
 }
 .iqdropdown .iqdropdown-menu-option {
     align-items: center;
     display: flex;
-    height: 75px;
-    padding: 0 15px;
+    height: 2.8167rem;
+    margin: 0.2567rem 0.6rem 0 1.25rem;
 }
 .iqdropdown .iqdropdown-menu-option:last-child {
     border: 0;
@@ -144,62 +115,66 @@
 }
 @media only screen and (max-width: 640px) {
     .iqdropdown .iqdropdown-menu.mobile-top-menu {
-        top: -285px;
+        top: -23.75rem;
     }
 }
 .iqdropdown-content {
     flex: 1;
     padding-right: 10px;
 }
-.iqdropdown-item {
-    color: #000;
-    font-family: "OpenSans", sans-serif;
-    font-size: 17px;
-    font-weight: 400;
+.iqdropdown-item,
+.counter {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    color: #1f2041;
 }
 .iqdropdown p.iqdropdown-description {
-    color: #4a4a4a;
-    font-family: "OpenSans", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 5px;
+    // color: #4a4a4a;
+    // font-family: "OpenSans", sans-serif;
+    // font-size: 14px;
+    // font-weight: 400;
+    // margin-top: 5px;
 }
 .iqdropdown .iqdropdown-item-controls {
     display: flex;
-    height: 45px;
 }
-.iqdropdown .iqdropdown-item-controls .counter {
-    color: #4a4a4a;
-    font-family: "OpenSans", sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    border-bottom: 1px solid #e2e2e2;
-    border-top: 1px solid #e2e2e2;
-    padding: 11px 20px;
+.counter {
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    justify-content: center;
+    align-items: center;
 }
 .iqdropdown .iqdropdown-item-controls button {
     align-items: center;
-    border: 1px solid #e2e2e2;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 1.8333rem;
     display: flex;
-    height: 45px;
-    padding: 0 20px;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(31, 32, 65, 0.5);
     transition: all 0.2s ease-in-out;
 }
 .iqdropdown .iqdropdown-item-controls button:hover {
-    background-color: #eee;
+    border: 1px solid rgba(31, 32, 65, 0.5);
 }
-.iqdropdown .iqdropdown-item-controls button.button-decrement {
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
-}
-.iqdropdown .iqdropdown-item-controls button.button-increment {
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
-}
+
 .iqdropdown {
     align-items: center;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 4px;
+    border-radius: 2px;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
     cursor: pointer;
     display: flex;
     width: 26.6667rem;
