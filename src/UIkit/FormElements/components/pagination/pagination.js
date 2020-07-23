@@ -6,6 +6,7 @@ $(function(){
         displayedPages: 3,
         edges: 1,
         cssStyle: 'light-theme',
-        nextText: 'arrow_forward'
+        nextText: 'arrow_forward',
+        prevText: 'arrow_back'
     })
 })

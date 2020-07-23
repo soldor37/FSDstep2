@@ -68,6 +68,17 @@ span.ellipse.clickable {
 	/* background: linear-gradient(top, #ffffff 0%,#efefef 100%); W3C */
 }
 .pagination {
+	.prev {
+		border-radius: 22px;
+		background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+		font-family: "Material icons";
+		color: #ffffff;
+		display: flex;
+		justify-content: center;
+		font-size: 24px;
+		line-height: 1;
+		word-wrap: normal;
+	}
 	.next {
 		border-radius: 22px;
 		background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
@@ -95,6 +106,9 @@ span.ellipse.clickable {
 	cursor: default;
 	border-radius: 22px;
 	&.prev {
+		display: none;
+	}
+	&.next {
 		display: none;
 	}
 }
