@@ -5,7 +5,7 @@ mixin dropdown(title, subtitle, type)
         if(subtitle)
         p.dropdown__subtitle.text-H3
             |#{subtitle}
-    .iqdropdown(class!=attributes.class class=type)
+    .iqdropdown(class!=attributes.class class=type )
         p.iqdropdown-selection
         .iqdropdown-menu
             if(type=="guest")
@@ -18,6 +18,11 @@ mixin dropdown(title, subtitle, type)
                 .iqdropdown-menu-option(data-id="item3")
                     .item
                         p.iqdropdown-item="Младенцы"
+                .iqdropdown__control
+                    .iqdropdown__control__clear
+                        +button('link','Очистить')
+                    .iqdropdown__control__accept
+                        +button('link','Применить')
             if(type=="furn")
                 .iqdropdown-menu-option(data-id="item1" data-defaultcount="2" data-mincount="1")
                     .item
